@@ -1,11 +1,13 @@
-# Python code to read image
 import cv2
 
-# To read image from disk, we use
-# cv2.imread function, in below method,
-img = cv2.imread("E:\OPEN-CV\Basic\wallpaper.jpg", cv2.IMREAD_COLOR)
-cv2.imshow(img)
+# Read the image from disk
+img = cv2.imread("E:\\OPEN-CV\\Basic\\wallpaper.jpg", cv2.IMREAD_COLOR)
+
+# Display the image in a window
+cv2.imshow("My Image", img)
+
+# Wait for a key press indefinitely
 cv2.waitKey(0)
 
-
+# Destroy all OpenCV windows
 cv2.destroyAllWindows()
